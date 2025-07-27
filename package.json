@@ -13,6 +13,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "cheerio": "^1.1.2",
+    "lodash": "^4.17.21",
     "vue": "^3.5.17"
   },
   "devDependencies": {
