@@ -69,8 +69,8 @@ const segments = computed<Segment[]>(() => {
       ),
     })
 
+    tmpText = tmpText.slice(lastIndex)
     lastIndex = 0
-    tmpText = tmpText.slice(tagEndIndex + tagEnd.length)
   }
 
   if (tmpText) {
