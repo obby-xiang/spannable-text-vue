@@ -1,19 +1,19 @@
-# text-component-vue
+# spannable-text-vue
 
 Example
 ```vue
 <script setup lang="ts">
-import ProgressiveText from '@/components/ProgressiveText.vue'
+import SpannableText from '@/components/SpannableText.vue'
 
 const text = 'Hello, [[$ <link url="https://github.com/">Github</link> $]]!'
 </script>
 
 <template>
-  <progressive-text :text="text">
+  <spannable-text :text="text">
     <template #link="{ text, attr }">
       <a :href="attr.url" target="_blank">{{ text }}</a>
     </template>
-  </progressive-text>
+  </spannable-text>
 </template>
 
 <style scoped></style>
